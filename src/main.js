@@ -267,6 +267,7 @@ function loadStory(storyId, chapterIdx = 0) {
       openCommentBubble(p, e);
     });
 
+    viewport.appendChild(p);
   });
   
   // Footer navigation at the bottom of the reading content
