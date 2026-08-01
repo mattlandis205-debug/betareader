@@ -183,6 +183,51 @@ const STORIES = {
           'I see Jack watching from the second floor. He clutches a teddy bear under one arm, his rifle perched on the open window sill. He’s aiming at Alice.'
         ],
         dramaticMomentIndex: 7
+      },
+      {
+        title: 'Chapter 6: Justice',
+        paragraphs: [
+          '“Why didn’t you shoot?” Julia asks.',
+          'I haul up the bucket from Alice’s well and fill our water jugs. A bloody sun rises behind us. In a nearby field, two men dig a grave each. “Didn’t want to hit you.”',
+          '“As if I would ever put myself in your line of fire.”',
+          '“Couldn’t take that chance,” I lie again.',
+          '“Right. So instead you almost took a knife to the guts.” Julia eyes Quinn, who walks between the guard towers delivering food. “A knife that was absolutely covered in bacteria. That crazy freak. She probably had lice.”',
+          '“I said I was sorry.” A few times, before I went to sleep in Alice’s attic guest room and Julia watched the door. Then again when I woke up.',
+          '“She was gonna die anyway.” Julia always knows when I’m lying. “Your little act of mercy only spared her a night.”',
+          'She’s right, but I don’t regret it. Killing isn’t my job. I’ll do it if I have to, but I didn’t. Not then.',
+          '“There’s something wrong here,” I say.',
+          '“No kidding.”',
+          '“Did you see the kid last night? Jack?”',
+          'She eats a biscuit from the batch Quinn dropped off. “The little sniper? Yeah. I saw him.”',
+          '“He wasn’t aiming at us.”',
+          'Julia munches. “You think he wants to tell us something?”',
+          '“Maybe.”',
+          'A bell rings from deeper inside the town. <i>Clang clang clang.</i> People file out of homes toward the crossroads barricade. Quinn jogs over to us.',
+          '“They’ll be executed now,” he says. “Shot.”',
+          'My stomach tightens. After all we’ve seen, I still can’t stand it. Every death, even justified, makes me think of the twins. Of Dad.',
+          '“You said you had an account,” I say.',
+          'Alice comes out the back door and waves at him to join her.',
+          '“After the burial,” he says. “I’ll find you.” He waits, awkwardly.',
+          '“Oh—we’re not coming,” Julia says. “Go carry out your justice.”',
+          '“It shouldn’t have happened.” His eyes lower, ashamed. “Please don’t judge us because of those two. They were kicked out of the community a long time ago.”',
+          '“So how’d they get back in?” Julia asks. “You told us it was safe.”',
+          '“They were squatting in an old storage cellar, sneaking out at night to find scraps,” he explains. “I swear, I didn’t know. I should’ve protected you better.”',
+          '<i>Clang clang clang.</i>',
+          'He looks like he wants to say more, but jogs off.',
+          '“He likes you,” I say.',
+          'Julia stares blankly after him. “They’re afraid of us. The witch and her storyteller. That’s all it is.”',
+          'She knows it’s not.',
+          '“It’s actually the storyteller and his witch,” I correct.',
+          '“That’s way less mysterious.”',
+          '“You could always wear a mask.”',
+          '“Ooo—now <i>that</i> would be creepy.”',
+          '“And make you easier to look at.”',
+          'She throws a piece of biscuit at me. Julia rarely smiles anymore, but when she does, it’s brighter than a noon sun. I’ve gotten so used to her mangled face, I don’t even notice it anymore. She is more lovely than she is fierce, even if I’m the only one who gets to see it. Mom would approve.',
+          'We watch the grave diggers shovel dirt. They toss it in neat piles on either side of the holes. Both men wear overalls like farmers from a hundred years ago, back when electricity still hadn’t reached them. I wonder how many bodies are in those fields, and in fields like it across the country.',
+          'A gunshot rings out. Then a second.',
+          'The grave diggers don’t stop their work.'
+        ],
+        dramaticMomentIndex: 37
       }
     ]
   }
