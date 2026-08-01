@@ -92,6 +92,44 @@ const STORIES = {
           '<i>“I cannot explain it,’ Will would tell his wife. ‘I don’t know how I reached him. It was a miracle.’ Carina would squeeze his hand, a twinkle in her eye. ‘No, coach,’ she would say, “it was a good catch.”</i>'
         ],
         dramaticMomentIndex: 13
+      },
+      {
+        title: 'Chapter 4: Secret',
+        paragraphs: [
+          'We set up camp in Alice’s backyard, our tent butted up against the trailer. A post and rail fence rings in two acres around the house. Overgrown fields race out in every direction under a darkening sky. Tree forts on stilts act as guard towers a few hundred yards from the house. Julia and I both shot our first deer from a structure like that, Before. Dad was there.',
+          '“Sure you don’t want to stay in the guest room?” Quinn asks. He holds a gas lantern. Kerosene, by the smell. “Gonna be cold tonight.”',
+          '“Cold’s fine.” Julia takes the armful of blankets he carries. “We like the fresh air.”',
+          'I put the rain tarp on, one eye on Quinn. He’s been staring at Julia all night, the way some of the men do. Some of them try to do more.',
+          '“What about the books?” Quinn points to the trailer, where a metal gun safe packed with notebooks sits next with our food and supplies. “Might rain.”',
+          '“It’s waterproof,” I say. “And we cover it with canvas, just to slow the rust.”',
+          'I see candlelight in the window above us. A woman’s shadow hovers behind it. Alice.',
+          '“There’s two guards in each tower, so you can sleep easy. Another by the garage for your mule.” Quinn scans the fields. “Haven’t had raiders in a while.”',
+          'Julia plops the blankets in our tent. “Good to know.”',
+          '“Thank you for hosting us,” I say. “We’re very grateful.”',
+          'Quinn moves fast, stepping close to me. His voice is low. “I want to give an account, but I can’t do it in front of them.”',
+          'He smells like sharp, homemade soap. My hand feels the pistol grip. “Why not?”',
+          '“It’s not a good story. Some don’t want it told.”',
+          'Julia’s only remaining eyebrow arches. It’s a message, part of our other language. Danger? I shake my head. If I’d blinked, the knife hidden in her boot would be buried in Quinn’s kidney.',
+          '“Give us a tour of the community tomorrow,” I say. “We’ll take your account then.”',
+          'He nods, relieved.',
+          '“But you’ll need a witness,” I add. “To corroborate. Those are the rules.”',
+          'He hands me the lantern. He’s trembling. “I understand.”',
+          'When he’s gone, Julia finishes setting up our tent. I replace the large canvas over the containers and secure it with bungee cords. We found it last year in the basement of a man who was once a Civil War reenactor. I knew what the fabric was because my 5th grade teacher had once done a live demonstration of how soldiers built them during the war. His name was Mr. Sanderson.',
+          'We duck inside the tent and zip it shut. As I get changed, Julie unzips a hidden exit in the back and silently slides her sleeping bag out under the trailer. She prefers first watch.',
+          '“Think he knows something?” she whispers.',
+          'I shrug. “He’s worried.”',
+          '“Could be them.”',
+          '“Maybe.”',
+          'Julia pulls her hair into a tight ponytail, then digs around for a mason jar full of yellow salve. Scooping out a handful, she gently rubs it on the burned half of her face. I take off my prosthetic socket and spread the homemade gel on what’s left of my knee.',
+          '“Dad talked about this place,” she says. “Didn’t he take us here, once?”',
+          '“Pulled pork sandwiches for the Super Bowl.”',
+          '“Oh yeah. They were good.”',
+          '“Brisket, coleslaw, and sauce.” My mouth waters at the memory of tangy Carolina Gold. “Fifty-six dollars.”',
+          '“Guess we’ll see if he has anything to confess.” Julia screws the top back on the salve and wipes her hand on a blanket. From her bag, she draws out a worn but well oiled army pistol: Rat Killer. Our grandfather carried it down tunnels of a far away jungle war when he was a few years older than her. He said it saved his life no less than eight times.',
+          '“Sleep with your gun and the Maglite,” she says. “Wake you in four hours.”',
+          'I turn the gas lantern knob and watch the flame go out.'
+        ],
+        dramaticMomentIndex: 10
       }
     ]
   }
