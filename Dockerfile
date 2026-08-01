@@ -1,5 +1,5 @@
-# Build and production environment
-FROM node:18-alpine
+# Build and production environment using Node 22 (LTS)
+FROM node:22-alpine
 
 WORKDIR /app
 
