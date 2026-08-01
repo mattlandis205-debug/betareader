@@ -6,8 +6,8 @@ WORKDIR /app
 # Copy dependency definitions
 COPY package*.json ./
 
-# Install dependencies
-RUN npm ci
+# Install dependencies (ensure devDependencies like Vite are included)
+RUN npm ci --include=dev
 
 # Copy all source files
 COPY . .
