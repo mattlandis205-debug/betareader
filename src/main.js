@@ -267,8 +267,39 @@ function loadStory(storyId, chapterIdx = 0) {
       openCommentBubble(p, e);
     });
 
-    viewport.appendChild(p);
   });
+  
+  // Footer navigation at the bottom of the reading content
+  if (chapterIdx < story.chapters.length - 1) {
+    const nextChapter = story.chapters[chapterIdx + 1];
+    const nextCleanTitle = nextChapter.title.replace(/^Chapter\s+\d+:\s*/i, '');
+    
+    const footerNav = document.createElement('div');
+    footerNav.className = 'reading-footer-nav';
+    footerNav.innerHTML = `
+      <button class="footer-next-btn">
+        Next Chapter: ${nextCleanTitle} <span class="footer-arrow">→</span>
+      </button>
+    `;
+    
+    footerNav.querySelector('.footer-next-btn').addEventListener('click', () => {
+      loadStory(storyId, chapterIdx + 1);
+    });
+    
+    viewport.appendChild(footerNav);
+  } else {
+    // End of available chapters message
+    const footerNav = document.createElement('div');
+    footerNav.className = 'reading-footer-nav';
+    footerNav.innerHTML = `
+      <div class="end-of-story-message">
+        <h3>End of Available Chapters</h3>
+        <p>Thank you for beta reading <strong>${story.title}</strong>!</p>
+        <p style="font-size: 0.85rem; opacity: 0.7; margin-top: 8px;">Please click the <strong>Copy Notes</strong> button in the sidebar to share your feedback with the author.</p>
+      </div>
+    `;
+    viewport.appendChild(footerNav);
+  }
 
   // Update navigation buttons
   document.getElementById('prev-chapter-btn').disabled = chapterIdx === 0;
