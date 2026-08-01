@@ -141,7 +141,7 @@ const STORIES = {
           'Someone on the other side fumbles for the zipper. They don’t find it—can’t, because we tuck it in for safety. I point the pistol at the door.',
           '“Prison break,” I say.',
           'Behind me, I hear her moving.',
-          'There’s a tearing sound as something punctures the tent door in front of me. I fumble for the Maglite and ready a thumb on the button. In a world that’s gone dark, the twelve year old kid with light is king.',
+          'There’s a tearing sound as something punctures the tent door in front of me. I fumble for the Maglite and ready a thumb on the button. In a world that’s gone dark, the thirteen-year-old boy with light is king.',
           '“Jules!” I yell. <i>“Prison break!”</i>',
           'I flick on the Maglite and see a rusted knife sliding down the nylon. Another pair of hands yanks at the fabric, fingers stained with dirt.',
           '“Two!” I yell, so she knows what she’s running towards.',
