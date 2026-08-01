@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BetaReader — Immersive E-Reader</title>
+    <!-- Premium Google Fonts for story-specific atmospheres -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Special+Elite&family=JetBrains+Mono:wght@300;400;600&family=Cinzel:wght@400;600;700&family=Orbitron:wght@400;700&family=Bebas+Neue&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- The dynamic canvas overlay background -->
+    <canvas id="bg-canvas"></canvas>
+    
+    <!-- Ambient Vignette Overlay to enhance contrast and readability -->
+    <div class="ambient-overlay"></div>
+    
+    <!-- Decorative border decorations that morph/fade based on theme -->
+    <div id="theme-frame-overlay" class="theme-frame"></div>
+
+    <div class="app-layout">
+      <!-- Top Navigation Bar (Glassmorphic) -->
+      <header class="top-navbar">
+        <div class="navbar-left">
+          <span class="logo">Beta<span class="logo-accent">Reader</span></span>
+          <span class="logo-separator">|</span>
+          <span class="story-title-header">The Story Keepers</span>
+        </div>
+
+        <div class="navbar-center">
+          <div class="chapter-nav">
+            <button id="prev-chapter-btn" class="nav-arrow-btn" aria-label="Previous Chapter">←</button>
+            <span id="current-chapter-title">Chapter 1</span>
+            <button id="next-chapter-btn" class="nav-arrow-btn" aria-label="Next Chapter">→</button>
+          </div>
+        </div>
+
+        <div class="navbar-right">
+          <button id="toggle-sidebar-btn" class="icon-btn" title="Toggle Sidebar">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+          </button>
+          <button id="open-settings-btn" class="icon-btn" title="Reading Settings">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="main-container">
+        <!-- Main E-Reader Content Pane -->
+        <main class="reading-pane">
+          <div id="story-viewport" class="story-viewport">
+            <!-- Story content will be dynamically injected here -->
+          </div>
+          
+          <!-- Character background silhouette on the left side of reading pane -->
+          <div class="character-left-overlay">
+            <img src="/character-julia.jpg" alt="Julia silhouette" />
+          </div>
+
+          <!-- Character background silhouette on the right side of reading pane -->
+          <div class="character-background-overlay">
+            <img src="/character-max.jpg" alt="Max silhouette" />
+          </div>
+
+          <!-- Interactive Comment Popup Modal (Appears inline on click) -->
+          <div id="comment-bubble" class="comment-bubble hidden">
+            <div class="comment-bubble-arrow"></div>
+            <div class="comment-bubble-header">
+              <h4>Paragraph Feedback</h4>
+              <button id="close-comment-btn" class="close-btn">&times;</button>
+            </div>
+            <div id="paragraph-preview" class="paragraph-preview"></div>
+            
+            <div class="existing-comments-container">
+              <h5>Existing Beta Comments:</h5>
+              <div id="existing-comments" class="existing-comments"></div>
+            </div>
+
+            <form id="comment-form" class="comment-form">
+              <textarea id="comment-input" placeholder="Type a note (e.g. 'Pacing feels slow here', 'Love this description!')..." required></textarea>
+              <div class="comment-form-actions">
+                <div class="comment-category-select">
+                  <select id="comment-category">
+                    <option value="praise">❤️ Praise</option>
+                    <option value="critique">⚠️ Critique</option>
+                    <option value="typo">✏️ Typo/Fix</option>
+                    <option value="question">❓ Question</option>
+                  </select>
+                </div>
+                <button type="submit" class="submit-btn">Save Note</button>
+              </div>
+            </form>
+          </div>
+          
+          <!-- Scroll indicator dot mapped to the sidebar mini-map -->
+          <div class="scroll-progress-bar">
+            <div id="scroll-progress-fill" class="scroll-progress-fill"></div>
+          </div>
+        </main>
+
+        <!-- Right / Floating Sidebar: Beta Reader Tools & Chapter Map -->
+        <aside id="app-sidebar" class="app-sidebar">
+          <div class="sidebar-section">
+            <h3 class="section-title">Visual Pacing Map</h3>
+            <p class="section-desc">See narrative tension based on other beta reader notes.</p>
+            <div class="pacing-map-container">
+              <canvas id="pacing-map-canvas"></canvas>
+              <div id="pacing-map-marker" class="pacing-marker"></div>
+            </div>
+            <div class="pacing-legend">
+              <span>Beginning</span>
+              <span>End</span>
+            </div>
+          </div>
+
+          <div class="sidebar-section">
+            <h3 class="section-title">Atmosphere Controller</h3>
+            <p class="section-desc">Shift your reading environment to match your focus.</p>
+            <div class="slider-group">
+              <label for="intensity-slider">FX Intensity: <span id="intensity-val">60%</span></label>
+              <input type="range" id="intensity-slider" min="0" max="100" value="60">
+            </div>
+            <div class="checkbox-group">
+              <label class="toggle-switch">
+                <input type="checkbox" id="scroll-morph-toggle" checked>
+                <span class="slider round"></span>
+                <span class="label-text">Scroll-Bound Morphing</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="sidebar-section">
+            <h3 class="section-title">Real-Time Mood Tracker</h3>
+            <p class="section-desc">Select how the current scene makes you feel to log atmospheric data.</p>
+            <div class="mood-selectors">
+              <button class="mood-btn active" data-mood="neutral" title="Intrigued / Neutral">🤔 Intrigued</button>
+              <button class="mood-btn" data-mood="tense" title="Tense / Suspenseful">😰 Tense</button>
+              <button class="mood-btn" data-mood="excited" title="Excited / Energetic">⚡ Excited</button>
+              <button class="mood-btn" data-mood="melancholy" title="Sad / Melancholic">🌧️ Sad</button>
+              <button class="mood-btn" data-mood="peaceful" title="Calm / Relieved">🌸 Calm</button>
+            </div>
+          </div>
+
+          <div class="sidebar-section feedback-summary-section">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <h3 class="section-title" style="margin-bottom: 0;">Your Highlights & Notes</h3>
+              <button id="export-notes-btn" class="export-btn" style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-color); color: var(--text-color); padding: 4px 8px; border-radius: 4px; font-size: 0.7rem; cursor: pointer; display: none; transition: background 0.2s;">Copy Notes</button>
+            </div>
+            <div id="feedback-list" class="feedback-list">
+              <div class="empty-state">Click paragraphs in the text to leave inline annotations.</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+
+
+    <!-- Reading Comfort Settings Modal -->
+    <div id="settings-modal" class="modal-backdrop hidden">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Reading Settings</h2>
+          <button id="close-settings-modal-btn" class="close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="settings-control-group">
+            <label for="font-family-select">Font Family</label>
+            <select id="font-family-select">
+              <option value="auto">Theme Default</option>
+              <option value="Playfair Display">Elegant Serif (Playfair)</option>
+              <option value="Lora">Cozy Serif (Lora)</option>
+              <option value="Special Elite">Typewriter (Special Elite)</option>
+              <option value="Inter">Clean Sans (Inter)</option>
+              <option value="JetBrains Mono">Tech Monospace</option>
+              <option value="dyslexic">Dyslexic-Friendly</option>
+            </select>
+          </div>
+
+          <div class="settings-control-group">
+            <label for="font-size-slider">Font Size: <span id="font-size-val">18px</span></label>
+            <input type="range" id="font-size-slider" min="14" max="28" value="18">
+          </div>
+
+          <div class="settings-control-group">
+            <label for="line-height-slider">Line Spacing: <span id="line-height-val">1.6</span></label>
+            <input type="range" id="line-height-slider" min="1.2" max="2.2" step="0.1" value="1.6">
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
