@@ -372,6 +372,40 @@ const STORIES = {
           '<i>Instead, he bent down and hugged her for the first time in his life.</i>'
         ],
         dramaticMomentIndex: 18
+      },
+      {
+        title: 'Chapter 10: Warning',
+        paragraphs: [
+          'We spend a week in Alice’s community.',
+          'I record eighteen narratives, transcribing them at night by gas light. Three times a day I sit atop the trailer and read an account. Jack doesn’t leave my side. Quinn stays close too, flirting with my sister in his quiet way.',
+          'On the eighth day, Julia tells Alice we’re leaving.',
+          '“It’ll be snowing in eight weeks.” Sweat beads on Alice’s forehead as she digs up potatoes in the corner of a field. Others work in nearby rows, gently prying up the food that will help them survive another winter. “You’re welcome to stay. Or come back.”',
+          '“We have other stories to record,” I say. “And to share.”',
+          'She wipes her forehead. “They didn’t ask for news of other communities. Not even a word of the other places you’ve been. Isn’t that strange?”',
+          'People did at first, but not anymore. “I think people aren’t waiting to be saved, like Before. They don’t need information from the outside.”',
+          '“But you’ll tell them, if they ask.”',
+          'Julia blinks at me. <i>Careful.</i>',
+          '“I keep a detailed account of our travels, corroborated by my sister,” I say. “If people ask, I read from them.”',
+          'Alice stands and brushes dirt off her jeans. “We did what we had to. I won’t apologize for it.”',
+          '“And we won’t judge you for it,” Julia lies. “That’s not why we’re here.”',
+          'Alice shades her eyes with a hand. “No. I don’t think it is.”',
+          'We walk with her to the garage. She feeds Eliza a carrot pulled from her pocket. Julia begins an inspection of the mule’s harness. Yesterday, Quinn replaced a breeching strap and shoed her. I think he sensed our time here was ending.',
+          '“I believe in your work. Without our life stories, who are we?” Alice strokes Eliza’s neck. “You brought joy to this place, and we haven’t had a whole lot of that in a while. I’ll give you any open house you want.”',
+          'Julia pulls a leather strap, testing its strength. “We’re not staying.”',
+          '“I told that to Quinn.” Alice feeds Eliza another carrot. “My son and nephew are worried about you. Me? I think you can handle yourselves.”',
+          'The new world taught Julia how to kill. I learned that listening to people means hearing what they don’t say.',
+          '“What’s out there?” I ask.',
+          'Alice folds her arms. “We think they live at the cabins on Lake Nockamixon. We call them the Quiet Ones.”',
+          'A chill ripples down my neck. Our parents said ghosts weren’t real, so they never told us any stories about them. Worse things haunt the world now.',
+          '“Sadie was sleeping on the roof of a mechanic shop on 313 when a family came down the road,” Alice says. “She was about to call out when a group of them appeared. Killed the man, took the others captive. Did it without making a sound.”',
+          'The twins were always loud, like Dad.',
+          '<i>Run, boys. Run.</i>',
+          '“Psycho ninjas near the lake, got it,” Julia says. “Still leaving.”',
+          '“Most people want what you have to give,” Alice says, looking directly at me. “It’s clever, I’ll give you that. You’ve stayed alive longer you should have. But not everyone wants to hear a story. Some don’t want to remember what the world was like Before.”',
+          'She hugs me, tight. I hear a <i>whoosh</i> as Julia goes for Rat Killer.',
+          '“Be careful,” Alice whispers in my ear. “That gun you’re holding now, inside your coat—don’t let it go.” She pulls back and kisses my cheek. “Next time somebody comes into your tent, pull the damn trigger.”'
+        ],
+        dramaticMomentIndex: 26
       }
     ]
   }
