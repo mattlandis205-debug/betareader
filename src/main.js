@@ -486,7 +486,7 @@ function loadStory(storyId, chapterIdx = 0) {
   const chapter = story.chapters[chapterIdx];
   // Strip "Chapter X: " prefix from title for the navbar display
   const displayTitle = chapter.title.replace(/^Chapter\s+\d+:\s*/i, '');
-  document.getElementById('current-chapter-title').textContent = displayTitle;
+  document.getElementById('current-chapter-title').innerHTML = `${displayTitle} <span class="nav-chevron">▼</span>`;
 
   // Add Chapter Title Header directly at the top of the text viewport
   const chapterHeader = document.createElement('h2');
@@ -588,6 +588,44 @@ function loadStory(storyId, chapterIdx = 0) {
 
   // Redraw pacing map for current story/chapter
   renderPacingMap();
+
+  // Populate the chapter dropdown menu
+  populateChapterDropdown();
+}
+
+function populateChapterDropdown() {
+  const dropdown = document.getElementById('chapter-dropdown-menu');
+  if (!dropdown) return;
+  
+  const story = STORIES[currentStoryId];
+  if (!story) return;
+
+  dropdown.innerHTML = '';
+  
+  story.chapters.forEach((chapter, idx) => {
+    const cleanTitle = chapter.title.replace(/^Chapter\s+\d+:\s*/i, '');
+    const item = document.createElement('div');
+    item.className = 'chapter-dropdown-item';
+    if (idx === currentChapterIdx) {
+      item.classList.add('active-chapter');
+    }
+    item.textContent = `${idx + 1}. ${cleanTitle}`;
+    
+    item.addEventListener('click', (e) => {
+      e.stopPropagation();
+      loadStory(currentStoryId, idx);
+      closeChapterDropdown();
+    });
+    
+    dropdown.appendChild(item);
+  });
+}
+
+function closeChapterDropdown() {
+  const container = document.querySelector('.chapter-title-container');
+  if (container) {
+    container.classList.remove('active');
+  }
 }
 
 function applyTheme() {
@@ -985,6 +1023,15 @@ function setupEventListeners() {
     }
   });
 
+  // Chapter title dropdown toggle
+  const dropdownTrigger = document.querySelector('.chapter-title-container');
+  if (dropdownTrigger) {
+    dropdownTrigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdownTrigger.classList.toggle('active');
+    });
+  }
+
   // Sidebar toggle
   const sidebar = document.getElementById('app-sidebar');
   document.getElementById('toggle-sidebar-btn').addEventListener('click', () => {
@@ -1009,6 +1056,8 @@ function setupEventListeners() {
     if (!bubble.classList.contains('hidden') && !bubble.contains(e.target)) {
       bubble.classList.add('hidden');
     }
+    // Close chapter dropdown if clicking outside
+    closeChapterDropdown();
   });
 
   document.getElementById('close-comment-btn').addEventListener('click', () => {

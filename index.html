@@ -31,7 +31,10 @@
         <div class="navbar-center">
           <div class="chapter-nav">
             <button id="prev-chapter-btn" class="nav-arrow-btn" aria-label="Previous Chapter">←</button>
-            <span id="current-chapter-title">Chapter 1</span>
+            <div class="chapter-title-container">
+              <span id="current-chapter-title" class="dropdown-trigger">Chapter 1 <span class="nav-chevron">▼</span></span>
+              <div id="chapter-dropdown-menu" class="chapter-dropdown-content"></div>
+            </div>
             <button id="next-chapter-btn" class="nav-arrow-btn" aria-label="Next Chapter">→</button>
           </div>
         </div>
