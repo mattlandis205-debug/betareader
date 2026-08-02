@@ -332,6 +332,46 @@ const STORIES = {
           '“No.” Jack sniffles, shaking his head. “I shot an older man and lady. The others got away.”'
         ],
         dramaticMomentIndex: 34
+      },
+      {
+        title: 'Chapter 9: Music',
+        paragraphs: [
+          'We eat on the street, seated at plastic tables carried from a church basement. <i>Blooming Glen Mennonite</i> stamps the underside of each one. I wonder if the Snyders attended. Julia and I eat enough to be polite, but neither of us have an appetite. Quinn’s story sent our minds racing. A dessert of canned peaches helps distract us.',
+          'Jack did not shoot our brothers, or our father. That is all we know, but more than we knew. Hope emerged from that nightmare.',
+          '<i>Keep running, boys.</i>',
+          '<i>Faster.</i>',
+          'Elias picks at a guitar, finding the chords of a song I don’t know. His wife sings quietly, a hopeful melody about those who are no longer here. Maybe it’s for his brother, or the children they lost. She kisses him at the end, and others clap. Heads begin to turn, eyes watching me. Julia nudges my foot.',
+          'I stand. “Our parents read to us every night, Before. Many of you still practice that ritual. It would be an honor if I could read to you this night.”',
+          'They carry folding chairs to Alice’s backyard and arrange in a circle around the trailer. I select a notebook from the safe and sit high on top of a plastic crate full of winter blankets. Julia hands me a gas lantern.',
+          '“This is the true account of Sarah Cole, age forty-two of Bedminster, Pennsylvania, and her son Nathan, age eight. She told me this story on the six month of the first year after the lights went out. Her mother-in-law Henrietta Cole corroborated the story.”',
+          'I see Jack watching from his upstairs perch, rifle but no teddy. Quinn dose the same from another window. Julia stands below me, alert.',
+          '<i>Nathan was not a normal child. Before the lights went out, people called him atypical; if they wanted to sound extra smart, they called him ‘neurodiverse.’ They used these words because saying ‘abnormal’ sounded mean; sensitivity was prioritized over reality, back then. The truth was, and would always be, that Nathan was not normal. He had Autism, which by definition set him apart.</i>',
+          '<i>Nathan rarely spoke in full sentences. He struggled to control his emotions; he struggled to make friends; he struggled to look his teachers and parents in the eye; he hated to be touched. Sarah hugged him every night before bed, but he did not hug her back. Some nights, he did not even tolerate this hug. One night, he hit her.</i>',
+          '<i>Nathan went to a large elementary school with a wonderful support program. He had dedicated teachers who met his learning and emotional needs. He had watchful champions who made sure he participated in gym, recess, and field trips. He did all of these things while wearing headphones, which played an endless stream of classical music that calmed him. Bach, Mozart, Beethoven, Chopin, Brahms, Vivaldi. These were the soundtrack to Nathan’s life.</i>',
+          '<i>As his fifth grade year drew to a close, Nathan began telling his mother that he wanted to play a song in the year -end talent show. Sarah was surprised, as her son had never played an instrument before. She was also concerned that he would be laughed at. The music teacher, Mrs. Baker, who ran the talent show, agreed that this was not a good idea. Sarah and Mrs. Baker came up with another idea: Nathan could help open and close the curtain for each act. Nathan did this with great success, earning many high fives from his classmates.</i>',
+          'The crowd murmurs. Gas lanterns show their angry faces. I turn my knob up to see the page better.',
+          '<i>On the last day of the year, the entire school gathered again for fifth grade graduation. Sarah recalled the heat—ninety-five degrees—in a gym with no air conditioning. Teachers gave out academic and character awards; a former student talked about the joys and challenges awaiting them in middle school. Nathan’s autistic support class struggled with both the length of the assembly and temperature of the space. Several had outbursts loud enough to make parents turn and look. The teacher decided to escort them all back to their cool, quiet room. Nathan became agitated, refusing to go.</i>',
+          '<i>Sarah noticed the commotion, and went back to help. Nathan grabbed her arm and communicated that he wanted to stay for the final song, where the entire grade stood on the risers and sang My Wish by Rascal Flatts. Sarah asked the teacher if Nathan could sit with her, and the teacher agreed.</i>',
+          '<i>At last the principal’s parting message was done and Nathan walked onto to the risers with the other fifth graders. Cueing the soundtrack, Mrs. Baker directed them in a heartwarming rendition of the classic rite of passage song. Sarah held back tears, for what would Nathan face in middle school?</i>',
+          '<i>Parents clapped and whistled as the song ended. Then a boy walked off the risers to the piano: Nathan. Pacing around the instrument, he banged a few keys before sitting. Mrs. Baker looked at the principal, who looked right back at her. Sarah Cole darted down the aisle, tripping over a folding chair. Every parent with a special needs child knows embarrassment, but this was testing even her mettle.</i>',
+          '<i>And then Nathan began to play.</i>',
+          '<i>At first, nobody knew—the piano was electric, plugged into the speaker system. It was off.</i>',
+          '<i>Mrs. Baker was the first to understand. As Sarah raced up to grab her son, the music teacher put out an arm to block her. She pointed to Nathan’s hands.</i>',
+          '<i>“Look.”</i>',
+          '<i>They looked.</i>',
+          '<i>Then Mrs. Baker turned on the piano.</i>',
+          '<i>The melody was quiet, lighter than air. But as Nathan’s fingers moved across the keys, it grew louder and more sorrowful. The audiences stirred, aware that something was happening.</i>',
+          '<i>“Is that—” Sarah started. “What is that?”</i>',
+          '<i>Mrs. Baker’s remained wide open as Nathan began to sway with the beat. “That’s Beethoven.”</i>',
+          '<i>Sarah knew the haunting song. Most people had heard it, but never from an elementary school. It was the kind of song played by concert pianists from Belarus or Tokyo or New York, musicians who spent half their lies in conservatories mastering their craft. She remembered thinking No, it was the song almost played at the talent show.</i>',
+          '<i>“It’s a recording,” she whispered. “It has to be. He doesn’t play the piano.”</i>',
+          '<i>Her legs turned to water, but Mrs. Baker caught her and gently lowered her to the ground. Everyone else stood, eyes straining to see the boy. Phones began to appear.</i>',
+          '<i>“He has never played the piano,” Sarah repeated, clutching Mrs. Baker.</i>',
+          '<i>The music teacher held her tight. “Mrs. Cole: He is playing now.”</i>',
+          '<i>Beethoven’s Moonlight Sonata filled the stifling gym for eight minutes. As the song approached its end, the audience began to clap. This turned into an applause, which became pandemonium. Fifth graders dashed off the risers, surrounding Nathan and chanting his name. Sarah reached for her son, worried the chaos might set him off.</i>',
+          '<i>Instead, he bent down and hugged her for the first time in his life.</i>'
+        ],
+        dramaticMomentIndex: 18
       }
     ]
   }
